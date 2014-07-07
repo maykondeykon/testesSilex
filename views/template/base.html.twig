@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <title>{% block title %}{% endblock %} - My Webpage</title>
+        {% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('../../css/style.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+    </head>
+    <body>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+            {% block footer %}
+                &copy; Copyright 2014 by <a href="https://plus.google.com/+MaykonDeykon/posts/p/pub">Maykon Deykon</a>.
+            {% endblock %}
+        </div>
+    </bodsy>
+</html>
